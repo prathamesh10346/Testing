@@ -1,4 +1,4 @@
-name: flutter_web_mobile
+name: allgames
 description: "A new Flutter project."
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
@@ -35,6 +35,18 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.6
+  provider: ^6.1.2
+  just_audio: ^0.9.40
+  simple_ripple_animation: ^0.0.9
+  svg_flutter: ^0.0.1
+  flutter_svg: ^2.0.10+1
+  shared_preferences: ^2.2.3
+  simple_gradient_text: ^1.3.0
+  flame: ^1.17.0
+  flame_audio: ^2.10.1
+  google_fonts: ^6.2.1
+  hive_flutter: ^1.1.0
+  hive: ^2.2.3
 
 dev_dependencies:
   flutter_test:
@@ -59,9 +71,32 @@ flutter:
   uses-material-design: true
 
   # To add assets to your application, add an assets section, like this:
-  # assets:
-  #   - images/a_dot_burr.jpeg
-  #   - images/a_dot_ham.jpeg
+  assets:
+    - assets/
+    - assets/images/
+    - assets/images/dice/
+    - assets/images/crown/
+    - assets/sounds/
+    - assets/images/img/
+    - assets/images/home/
+    - assets/images/fruit_ninja/
+    - assets/images/ludo/home/
+    - assets/images/pawn/
+    - assets/images/puzzle/
+    - assets/images/carrom/
+    - assets/images/
+    - assets/images/pieces/classic/
+    - assets/chess/images/
+    - assets/images/pieces/letters/
+    - assets/images/pieces/angular/
+    - assets/math/icons/
+    - assets/math/gifs/
+    - assets/images/pieces/8-bit/
+    - assets/images/pieces/videochess/
+    - assets/images/pieces/lewischessmen/
+    - assets/images/pieces/mexicocity/
+    - assets/audio/piece_moved.mp3    
+    
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
@@ -74,12 +109,15 @@ flutter:
   # "family" key with the font family name, and a "fonts" key with a
   # list giving the asset and other descriptors for the font. For
   # example:
-  # fonts:
-  #   - family: Schyler
-  #     fonts:
-  #       - asset: fonts/Schyler-Regular.ttf
-  #       - asset: fonts/Schyler-Italic.ttf
-  #         style: italic
+  fonts:
+    - family: PoetsenOne-Regular
+      fonts:
+        - asset: assets/font/PoetsenOne-Regular.ttf    
+    - family: Eater-Regular
+      fonts:
+        - asset: assets/chess/font/Eater-Regular.ttf
+
+
   #   - family: Trajan Pro
   #     fonts:
   #       - asset: fonts/TrajanPro.ttf
