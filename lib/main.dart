@@ -94,9 +94,14 @@ class _RootState extends State<Root> {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: LoginScreen(),
+    return ConstrainedBox(
+      constraints: const BoxConstraints(
+        maxWidth: 1200.0, // Set the desired max-width
+      ),
+      child: MaterialApp(
+        debugShowCheckedModeBanner: false,
+        home: LoginScreen(),
+      ),
     );
   }
 }
